@@ -10,6 +10,7 @@ The goal of this project was to architect and deploy an end-to-end serverless sy
 
 Live Site: https://dev.dosfe0bw08nyp.amplifyapp.com/
 
+<img width="1920" height="990" alt="chrome_aoVImgToQd" src="https://github.com/user-attachments/assets/599f703e-e0cc-434f-b567-0362132ee50b" />
 
 
 ---
