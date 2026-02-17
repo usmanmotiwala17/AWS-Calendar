@@ -8,6 +8,10 @@ The application uses a static frontend that communicates with a backend API buil
 
 The goal of this project was to architect and deploy an end-to-end serverless system and understand how AWS services integrate in a production-style environment.
 
+Live Site: https://dev.dosfe0bw08nyp.amplifyapp.com/
+
+
+
 ---
 
 ## Architecture
