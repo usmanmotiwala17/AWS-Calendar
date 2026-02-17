@@ -26,6 +26,9 @@ Frontend (HTML, CSS, JavaScript)
 
 All backend components are serverless and scale automatically.
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/617f638c-60a6-475c-bc1f-da066b5cb0e7" />
+
+
 ---
 
 ## Implementation Steps
