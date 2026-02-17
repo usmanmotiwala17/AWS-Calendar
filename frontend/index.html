@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Calendar Blocks</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/main.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Personal Calendar Blocks</h1>
+    <p class="subtle">Click a day in the calendar to select it. Date format is always YYYY-MM-DD.</p>
+    <p id="userInfo" class="user-id"></p>
+    <p class="subtle">
+      API URL format must be:
+      <code>https://{api-id}.execute-api.{region}.amazonaws.com/dev</code>
+    </p>
+    <p class="subtle">
+      Local testing: run <code>python -m http.server 5500</code> and open
+      <code>http://localhost:5500</code> (avoid <code>file://</code>).
+    </p>
+
+    <section class="card">
+      <div id="calendar"></div>
+    </section>
+
+    <section class="card">
+      <h2>Add Block</h2>
+      <div class="grid">
+        <label>
+          Date
+          <input id="date" type="date" required />
+        </label>
+        <label>
+          Start Time
+          <input id="start" type="time" required />
+        </label>
+        <label>
+          End Time
+          <input id="end" type="time" required />
+        </label>
+        <label class="full">
+          Label
+          <input id="label" type="text" maxlength="120" placeholder="Gym, Class, Work..." required />
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="saveBtn" type="button">Save Block</button>
+        <button id="loadBtn" type="button">Load Selected Date</button>
+        <button id="connectionTestBtn" type="button">Connection Test</button>
+      </div>
+    </section>
+
+    <div id="output" class="output" role="status" aria-live="polite"></div>
+    <pre id="debugBox" class="debug-box"></pre>
+
+    <section class="card">
+      <h2 id="selectedDateTitle">Selected Date: -</h2>
+      <table id="blocksTable" class="blocks-table">
+        <thead>
+          <tr>
+            <th>Start</th>
+            <th>End</th>
+            <th>Label</th>
+            <th>CreatedAt</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
