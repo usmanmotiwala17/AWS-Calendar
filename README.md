@@ -8,6 +8,8 @@ The application uses a static frontend that communicates with a backend API buil
 
 The goal of this project was to architect and deploy an end-to-end serverless system and understand how AWS services integrate in a production-style environment.
 
+(I used AI to help me with creating the frontend and Lambda code)
+
 Live Site: https://dev.dosfe0bw08nyp.amplifyapp.com/
 
 <img width="1920" height="990" alt="chrome_aoVImgToQd" src="https://github.com/user-attachments/assets/599f703e-e0cc-434f-b567-0362132ee50b" />
@@ -42,7 +44,7 @@ I created a static frontend using HTML, CSS, and JavaScript. The application inc
 - A list view for displaying saved blocks  
 - Delete functionality for removing blocks  
 
-The frontend sends HTTP POST requests to the API Gateway endpoint.
+The frontend sends HTTP POST requests to the API Gateway endpoint. 
 
 ---
 
